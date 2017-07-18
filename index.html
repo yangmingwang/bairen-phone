@@ -1,0 +1,584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>柏人科技</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/nav.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="javascript/jquery-1.11.3.js"></script>
+ <script type="text/javascript" src="javascript/index.js"></script>
+  <script type="text/javascript" src="javascript/jubu.js"></script>
+ <script type="text/javascript" src="javascript/touchScroll.js"></script>
+</head>
+
+<body>
+<!--Top两个logo-->
+<div class="top">
+	<div class="logo"><img src="img/bt1_03.png"></div>
+    <div class="tel"><img src="img/telephone2.png">
+        
+       
+    </div>
+</div>
+<!-- 响应式导航栏 -->
+<div id="nav">
+		<div class="hehe"></div>
+		<ul id="ul1">
+			<li class="li1"><a href="#">首页</a></li>
+			<li class="li1"><a href="#">服务</a></li>
+			<li id="anli" class="li1"><a href="#">案例</a></li>
+			<li id="pinzhi" class="li1"><a href="#">品质</a></li>
+			<li class="li1"><a style="border-right:none" href="#">联系</a></li>
+		</ul>
+		<ul id="ul2">
+			<li id="" class="li2"><a href="#"><img src="images/Navigation.png" alt="img"><span><strong>首&nbsp&nbsp页</strong><br>Home</span></a></li>
+			<li class="li2"><a href="html/fuwu.html"><img src="images/Navigation.png" alt="img"><span><strong>服&nbsp&nbsp务</strong><br>Service</span></a></li>
+			<li  class="li2"><a id="sz1" href="javascript:void(0)"><img src="images/Navigation.png" alt="img"><span class="nav_anli"><strong>案&nbsp&nbsp例</strong><br>Case</span></a></li>
+			<li  class="li2"><a id="sz2" href="javascript:void(0)"><img src="images/Navigation.png" alt="img"><span><strong>品&nbsp&nbsp质</strong><br>Quality</span></a></li>
+			<li class="li2"><a href="html/lianxi.html"><img src="images/Navigation.png" alt="img"><span><strong>联&nbsp&nbsp系</strong><br>Contact</span></a></li>
+		</ul>
+		<ul class="anli">
+			<li><a href="html/anli.html">ALL</a></li>
+			<li><a href="html/anli.html#pc">PC网站</a></li>
+			<li><a href="html/anli.html#yidong">移动网站</a></li>
+			<li><a href="html/anli.html#weixin">微信运营</a></li>
+			<li style="border-bottom:none"><a href="html/anli.html#app">APP应用</a></li>
+		</ul>
+		<ul class="pinzhi">
+			<li><a href="html/youshi.html">优势</a></li>
+			<li style="border-bottom:none"><a href="html/pinzhi.html">流程</a></li>
+		</ul>
+	</div>
+   
+<!--图片轮播-->
+<div class="wrapper">
+	<div class="swipe">
+	  <ul id="slider">
+			<a href="#"><li style="display:block"><img width="100%" src="images/banner1.png"  /></li></a><a href="#"><li style="display:block"><img width="100%" src="images/banner2.png" /></li></a>
+<a href="#"><li style="display:block"><img width="100%" src="images/banner3.png"  /></li></a>
+ 
+	  </ul>
+		<div id="pagenavi">
+			<a href="#" class="active">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var active=0,
+as=document.getElementById('pagenavi').getElementsByTagName('a');
+for(var i=0;i<as.length;i++){
+	(function(){
+		var j=i;
+		as[i].onclick=function(){
+			t2.slide(j);
+			return false;
+		}
+	})();
+}
+
+var t1=new TouchScroll({id:'wrapper','width':5,'opacity':0.7,color:'#555',minLength:20});
+
+var t2=new TouchSlider({id:'slider', speed:600, timeout:6000, before:function(index){
+		as[active].className='';
+		active=index;
+		as[active].className='active';
+	}});
+</script>
+<!--主体内容-->
+<div id="content1">
+ <div class="content_box">
+  <div class="box1">WHAT CAN WE DO<br></div>
+  <div class="boxs2">我们能做什么<br></div>
+  <!-- <ul>
+   <li>
+   <div class="st1"></div>
+   <div class="st2">
+   <span> 高端定制网站</span>
+    <p >企业高端定制网站设计<br>
+    彰显品牌形象</p>
+   
+   </div>
+   </li>
+   <li>
+   <div class="st3"></div>
+   <div class="st2">
+   <span> 移动网站建设</span>
+    <p >定制手机网站/微网站制作<br>
+    布局移动互联网</p></li>
+   <li>
+   <div class="st4"></div>
+   <div class="st2">
+   <span> 业务系统研发</span>
+    <p>基于B/S架构的系统研发<br>
+    让业务办公轻松自如</p></li>
+   <li>
+   <div class="st5"></div>
+   <div class="st2">
+   <span> APP应用程序</span>
+    <p>基于ios/Android应用开发<br>
+    掌控智能终端时代</p>
+   </li>
+  </ul> -->
+	<ul>
+		<li class="li-img1">
+			<img src="images/web2.png" alt="img" />
+			<div>
+				<span>高级定制网站</span>
+				<p>企业高端定制网站设计彰显品牌形象</p>
+			</div>
+		</li>
+		<li class="li-img2">
+			<img src="images/mob2.png" alt="img" />
+			<div>
+				<span>移动网站建设</span>
+				<p>布局移动互联网</p>
+			</div>
+		</li>
+		<li class="li-img3">
+			<img src="images/bs2.png" alt="img" />
+			<div>
+				<span>业务系统研发</span>
+				<p>基于B/S架构的系统研发让业务办公轻松自如</p>
+			</div>
+		</li>
+		<li class="li-img4" style="border-bottom:none">
+			<img src="images/app2.png" alt="img" />
+			<div>
+				<span>APP应用程序</span>
+				<p>基于Ios/Android应用开发掌控智能终端时代</p>
+			</div>
+		</li>
+	</ul>
+ </div>
+</div>
+<div id="content2">
+	<div class="content_box">
+  		<div class="box1">OUR CASES<br></div>
+  		<div class="boxs2">我们的作品<br></div>
+  	</div>
+  	<div class="bt1" ><img src="img/our-cases.png" alt="图片"></div>
+  	<div class="m1"><a href="html/anli.html">MORE ></a></div>
+  	<div class="black"></div>
+</div>
+<div id="content3">
+ <div class="content_box">
+  <div class="box1">OUR ADVANTAGE<br></div>
+  <div class="boxs2">我们的优势<br></div>
+  
+  <!-- <ul>
+   <li>
+   <div class="sd1">
+    <img width="100%" height="100%" src="img/major.png" alt="图片">
+   </div>
+   <p class="sz1">
+   即可量身定制,又有追求卓越的好产品
+   </p>
+   </li>
+   <li >
+    <div class="sd2">
+    <img width="100%" height="100%" src="img/absorbed.png" alt="图片">
+   </div>
+   <p class="sz2">
+   强大的研发能力,拥有自主知识产权
+   </p>
+   </li>
+   <li>
+    <div class="sd3">
+    <img width="100%" height="100%" src="img/acme.png" alt="图片">
+   </div>
+   <p class="sz3">
+   专业的技术和用户体验,提供最佳解决方案
+   </p>
+   </li>
+   <li class="so2">
+    <div class="sd4">
+    <img  width="100%" height="100%" src="img/perfection.png"  alt="图片">
+   </div>
+   <p class="sz4">
+   超越客户满意,圆满完成项目
+   </p>
+   </li>
+  </ul> -->
+	<div class="content3_ul">
+		<ul class="content3_left">
+		<li>
+			<div class="sd1">
+  			 	<img width="100%" height="100%" src="img/major.png" alt="图片">
+  			</div>
+  			<p class="sz1">
+   				即可量身定制,又有追求卓越的好产品
+   			</p>
+		</li>
+		<li>
+			<div class="sd2">
+   				<img width="100%" height="100%" src="img/acme.png" alt="图片">
+    		</div>
+    		<p class="sz3">
+  				专业的技术和用户体验,提供最佳解决方案
+    		</p>
+		</li>
+	</ul>
+	<ul class="content3_right">
+		<li>
+			<div class="sd3">
+   				<img width="100%" height="100%" src="img/absorbed.png" alt="图片">
+    		</div>
+    		<p class="sz2">
+   				强大的研发能力,拥有自主知识产权
+   			</p>
+		</li>
+		<li>
+			<div class="sd4">
+   				<img width="100%" height="100%" src="img/perfection.png" alt="图片">
+    		</div>
+    		<p class="sz4">
+  				超越客户满意,圆满完成项目
+    		</p>
+		</li>
+	</ul>
+	</div>
+	<div class="black"></div>
+  </div>
+</div>
+<div id="content4">
+ <div class="content_box">
+  <div class="box1">WE OFFER ONE STOP SERVICE<br></div>
+  <div class="boxs2">我们提供一站式服务<br></div>
+  <ul>
+   <li>
+   <h3><span > <img width="100%" height="100%" src="images/service2.png"></span>
+   需求提供</h3>
+   <p>了解客户需要及行业特点,感知客户企业文件,交流网站建议定能懂您所需。</p>
+   </li>
+   <li>
+    <h3><span> <img  width="100%" height="100%"src="images/service2.png"></span>策划咨询</h3>
+   <p>根据需求,市场和面向的用户群体,打造出一个合适您的解决方案。</p>
+   </li>
+   <li>
+    <h3><span> <img  width="100%" height="100%" src="images/service2.png"></span>合同签订</h3>
+   <p>给双方一个君子协议,让大家无后顾之忧,签订合同,支付首付。</p>
+   </li>
+   <li>
+   <h3><span> <img  width="100%" height="100%" src="images/service2.png"></span>项目启动</h3>
+   <p>界面设计、反馈修改、前端开发、程序制作、
+  内部测试。</p>
+   </li>
+   <li>
+    <h3><span> <img  width="100%" height="100%" src="images/service2.png"></span>客户验收,网站上线</h3>
+   <p>网站制作完成,交付您验收,验收完毕即可上线完美的测试流程,确保做您所想。</p>
+   </li>
+  </ul>
+ </div>
+</div>
+<div id="content5">
+ <div class="content_box">
+ <div class="box1">INTERNET&nbsp; &nbsp;INFORMATION<br></div>
+ <div class="boxs2">互联网资讯<br></div>
+ 
+ <div class="boxs3">听取专家意见，了解建站产品，剑圣营销网站。</div>
+ </div>
+<!--新闻资讯-->
+     <!--<div class="bac">
+    <div id="tab">
+        <h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><span class="zh1">行业资讯</span><span><a href="html/zixun.html">MORE ></a></span><em class="file"></em></h3>
+        <div class="block" id="con_two_1">
+            <ul>
+				<li>
+					<i class="sjx"></i>
+					<a class="tab_title" href="html/zhengwen.html">营销型网站设计解决方案..</a><span> 2016-03-02</span>
+				</li>
+<li>
+					<i class="sjx"></i>
+					<a class="tab_title" href="#">企业网站制作网站详情页提高转化率？</a><span> 2015-02-03</span>
+				</li>
+<li>
+					<i class="sjx"></i>
+					<a class="tab_title" href="#">想要做好网站优化工作做好内容工作..</a><span> 2015-02-03</span>
+				</li>
+<li>                <i class="sjx"></i>
+					
+					<a class="tab_title" href="#">企业网站制作网站详情页提高转化率？</a><span> 2015-02-03</span>
+				</li>
+<li>
+					  <i class="sjx"></i>
+					<a class="tab_title" href="#">如何做好手机网站建设的着落登陆界面？</a><span> 2015-02-03</span>
+				</li>
+ 
+            </ul>
+        </div>
+		
+				<div class="menu_li">&nbsp;</div> 
+      <h4 id="two2" onmouseover="setContentTab('two',2,4)"><span class="zh1">知识百科</span><span><a href="html/zixun.html">MORE ></a></span><em class="tst2"></em></h4>
+        <div id="con_two_2">
+            <ul>
+			 <li>
+				 <i class="sjx"></i>
+					<a class="tab_title" href="#">揭晓贷款行业3大诈骗手段</a><span>2015-02-04</span>
+				</li>
+<li>
+					 <i class="sjx"></i>
+					<a class="tab_title" href="#">2015个人消费贷款情况</a><span>2015-02-04</span>
+				</li>
+                <li> <i class="sjx"></i>
+					<a class="tab_title" href="#">如何获取快速“过节”款</a><span>2015-02-04</span>
+				</li>
+<li>
+					 <i class="sjx"></i>
+					<a class="tab_title" href="#">父母用儿子名字买房被偷拿去抵押</a><span>2015-02-04</span>
+				</li>
+<li>
+				<i class="sjx"></i>
+					<a class="tab_title" href="#">北京地区对于个人消费贷款限制持续</a><span>2015-02-03</span>
+				</li>
+ 
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+-->
+
+
+<div class="contain">
+		<div class="back_img">
+			<img src="img/slider2.png" alt="IMG" />
+			<div class="con2">
+				<p class="con2_div">
+					<i class="con2_div_left"><b>行业资讯</b> <span><a href="html/zixun.html">MORE ></a></span>
+						<!-- <a class="con2_div_left1">知识百科</a> -->
+					</i>
+					<i class="con2_div_right"><b>知识百科</b> <span><a href="file:///E|/未命名站点 4/项目  new/html/zixun.html">MORE ></a></span>
+						<!-- <a class="con2_div_right1">行业资讯</a> -->
+					</i>
+				</p>
+				<h5 class="show">
+					<!-- <ul class="tab1_ul">
+						<li class="tab1_ul_div">
+						<i class="sjx"></i>
+					<a class="tab_title" href="html/zhengwen.html">营销型网站设计解决方案</a>
+                    <span>2015-02-04</span>
+							
+						</li>
+						<li class="tab1_ul_div">
+                       <i class="sjx"></i>
+							<a class="tab_title" href="#">企业网站制作网站详情页提高转化率</a>   
+                     <span>2015-02-04</span>
+							
+						</li>
+						<li class="tab1_ul_div">
+						<i class="sjx"></i>
+							<a class="tab_title" href="#">想要做好网站优化工作做好内容工作</a>
+                            <span>2015-02-04</span>	
+						</li>
+						<li class="tab1_ul_div">
+							<i class="sjx"></i>
+							<a class="tab_title" href="#">企业网站制作网站详情页提高转化率</a>   
+                     <span>2015-02-04</span>
+							
+						</li>
+						<li class="tab1_ul_div">
+							<i class="sjx"></i>
+							<a class="tab_title" href="#">想要做好网站优化工作做好内容工作</a>
+                            <span>2015-02-04</span>	
+						</li>
+						
+					</ul> -->
+					<ul class="con2_tab1">
+						<li>
+							<p><a href="html/zhengwen.html">营销型网站设计解决方案</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">企业网站制作网站详情页提高转化率？</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">想要做好网站优化工作做好内容工作</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">企业网站制作网站详情页提高转化率？</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">如何做好手机网站建设的着落登录界面？</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">企业公司做个企业官网大概要做成怎样</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+					</ul>
+				</h5>
+				<h5>
+					<!-- <ul class="tab2_ul">
+						<li class="tab2_ul_div">
+							<i class="sjx"></i>
+					<a class="tab_title" href="#">想要做好网站优化工作必须做好的内容</a>
+                    <p>2015-02-04</span>
+						</li>
+						<li class="tab2_ul_div">
+							<i class="sjx"></i>
+							<a class="tab_title" href="#">企业网站制作网站详情页提高转化率</a>   
+                     <span>2015-02-04</span>
+						</li>
+						<li class="tab2_ul_div">
+							<i class="sjx"></i>
+					<a class="tab_title" href="#">想要做好网站优化工作必须做好的内容</a>
+                    <span>2015-02-04</span>
+						</li>
+						<li class="tab2_ul_div">
+							<i class="sjx"></i>
+							<a class="tab_title" href="#">企业网站制作网站详情页提高转化率</a>   
+                     <span>2015-02-04</span>
+						</li>
+						<li class="tab2_ul_div">
+							<i class="sjx"></i>
+					<a class="tab_title" href="#">企业公司做个企业官网大概要做成怎样</a>
+                    <span>2015-02-04</span>
+						</li>
+						
+					</ul> -->
+					<ul class="con2_tab1">
+						<li>
+							<p><a href="#">想要做好网站优化工作必须做好的内容</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">企业网站制作网站详情页提高转化率？</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">想要做好网站优化工作必须做好的内容</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">企业公司做个企业官网大概要做成怎样</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">如何做好手机网站建设的着落登录界面？</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+						<li>
+							<p><a href="#">企业公司做个企业官网大概要做成怎样</a></p>
+							<h6>2015-02-04</h6>
+						</li>
+					</ul>
+				</h5>
+             </div>
+</div>
+<!--新闻tab切换-->
+ 
+ </div>
+</div>
+<div id="content6">
+ <div class="content_box">
+ <div class="box1">IMMEDIATE COMMUNICATION<br></div>
+ <div class="boxs2">提交需求,我们立即与你沟通<br></div>
+  <ul>
+   <li><div class="ft1"></div>
+   <p style="margin-bottom:1%">河北省石家庄市谈固嘉禾广场东侧<br/></p>
+       <p>瑞城D区3号楼1-402室</p>
+       <div class="dt1"></div>
+   </li>
+   <li>
+   <div class="ft2"></div>
+   <p>0311-87247951/13230490432</p>
+   <div class="dt2"></div>
+   </li>
+   <li>
+   <div class="ft3"></div>
+   <p>BUSINESS@BAIRENSOFT.COM</p>
+   <div class="dt3"></div>
+   </li>
+   <li>
+    <div class="ft4"></div>
+   <p>1359830864</p>
+   </li>
+  </ul>
+  <form action="" style="margin-top:5%;">
+ <input type="text" name="name" placeholder="姓名" > 
+ <input type="text" name="name" placeholder="电话"> 
+<select class="cars" name="cars" >
+<option value="volvo">请选择要制作产品类型</option>
+<option value="pt">产品展示类</option>
+<option value="ms">信息发布类</option>
+<option value="service">服务中心类</option>
+<option value="online">网上商城类</option>
+</select>
+<textarea class="area" placeholder="留言"></textarea>
+
+</form>
+<button value="mstj">提交信息</button>
+ </div>
+</div>
+<div class="footer">
+ 			<div class="footer_a">
+ 				<div class="footer_left" >
+ 					<img src="images/bt1_03.png" />
+				</div>
+ 				<div class="footer_right">
+ 					<h1>石家庄柏人网络科技有限公司</h1>
+ 					<h2>SHIJIAZHUANG BAIREN NETWORK TECHNOLOGY CO.,LTD</h2>
+ 				</div>
+ 			</div>
+ 			<div class="foots">
+ 				© 2015-2016 BAIRENSOFT.COM冀ICP备15014256号
+ 			</div>
+ 		</div>
+</body>
+	<script type="text/javascript">
+	var nav=byClass("ul1","li1");
+	var lis=byClass("ul2","li2");
+	for(var i=1;i<nav.length;i++){
+		nav[i].onmouseover=function(){
+			for(var n=0;n<lis.length;n++){
+				if (nav[n]==this) {
+					lis[n].style.display="block";
+				}else{
+					lis[n].style.display="none";
+				}
+			}
+		}
+	}
+	var h5s=document.getElementsByTagName("h5");		
+	var i0=document.getElementsByTagName("i")[0];
+	var i1=document.getElementsByTagName("i")[1];
+	i0.onclick=function(){
+		i0.className="con2_div_left";
+		i1.className="con2_div_right";
+		h5s[0].className="show";
+		h5s[1].className="";
+	}
+	i1.onclick=function(){
+		i1.className="con2_div_left1";
+		i0.className="con2_div_right1";
+		h5s[1].className="show";
+		h5s[0].className="";
+	}
+	// ----------------------@导航居中随滚动条下拉
+	function toolbar(el) {
+        el = typeof el == 'string' ? document.getElementById(el) : el;
+            var elTop = el.offsetTop;
+            var sTop = 0;
+            window.onscroll = function () {
+                sTop = document.body.scrollTop || document.documentElement.scrollTop;
+                    if (sTop > elTop) {
+                        el.style.top = "0";
+                        el.style.position = "fixed"
+                    } else {
+                        el.style.top = elTop + 'px';
+                        el.style.position = "absolute"
+            		}
+        	}
+   		}
+    toolbar('nav');
+</script>
+</html>

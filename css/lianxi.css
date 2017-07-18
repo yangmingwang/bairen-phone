@@ -1,0 +1,209 @@
+body {
+	width:600px;	
+	margin:0 auto;
+	font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+    body {
+		width:100%;  
+  	}
+}
+h1{
+	font-size: 26px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+h2{
+	font-size: 22px;
+	font-weight: lighter;
+}
+h4{
+	font-weight: lighter;
+	color: black;
+	font-size: 18px;
+}
+#ul2 .li2:nth-child(5){
+	display: block;
+}
+/*--------------------------------------------------------------contain*/
+.box{
+	text-align: center;
+	color: #C95375;
+	position: relative;
+}
+.top{
+	width:100%;
+	overflow: hidden; 
+	background-color: #ffffff;
+	margin:0 auto;
+}
+.logo{
+	width:45%;
+	float:left;
+}
+.tel{
+	margin-top:5%;	
+	width:45%;
+    float:right;
+}
+.tel img{
+	float:right;
+}
+.contain{
+	width: 100%;
+	margin-top: 20%;
+}
+.con1{
+	width:100%;
+	background:url(../img/c6b.png) no-repeat;
+	background-size:cover;
+	background-position: top center;
+	margin-bottom: 30px;
+}
+.con1 ul{
+	margin-top:8%;
+}
+.con1 ul li{
+   		text-align: center;
+   		font-size:20px;
+}
+.ft1{
+	width:25px;
+	height:35px;
+	background:url(../img/add2.png) no-repeat;
+	margin:auto; 
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.ft2{
+	width:35px;
+	height:26px;
+	background:url(../img/TEL2.png) no-repeat;
+	margin:auto; 
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.ft3{
+	width:35px;
+	height:26px;
+	background:url(../img/mailbox2.png) no-repeat;
+	margin:auto; 
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.ft4{
+	width:30px;
+	height:32px;
+	background:url(../img/QQ2.png) no-repeat;
+	margin:auto; 
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.dt1{
+	width:80%;
+    border-top:1px dotted #ddd;
+	margin:3% auto;	
+	}
+.dt2{
+	width:70%;
+    border-top:1px dotted #ddd;
+	margin:5% auto;	
+}
+.dt3{
+	width:50%;
+    border-top:1px dotted #ddd;
+	margin:5% auto;	
+}
+.con2{
+	width: 80%;
+	margin: 0 10%;
+}
+.box1{
+	text-align: center;
+	color: #4CACBC;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.con2 form{
+	margin-top:5%;
+}
+.con2 input{
+	width:80%;
+	border: 1px solid #CCC;
+	padding:1%;
+	font-family:Verdana,Arial; 
+	font-size: 14px; 
+	margin-bottom:3%;
+	outline: none;
+	text-indent: 1px;
+}
+.cars{
+	width:82%;
+	border: 1px solid #CCC;
+	padding:1% 1% 1% 0; 
+	margin-bottom:3%;
+	font-family:Verdana,Arial;
+	font-size: 14px;
+	color: #A9A9A9;
+	outline: none;
+}
+.area{
+	width:80%;
+	border: 1px solid #CCC;
+	padding:1%;
+	font-family:Verdana,Arial; 
+	margin-bottom:3%;
+	font-size: 14px;
+	resize:none;
+	outline: none;
+	overflow:hidden;
+	text-indent: 1px;
+	line-height: 20px;
+}
+.con2 button{
+	width:25%;
+	padding: 6px 0;
+    cursor:pointer;
+    margin-bottom:10%;
+    background:#279CAE;
+	color:white;
+	font-size:16px;
+}
+
+/*-----------------------------------top----------@media*/
+@media screen and (max-width: 500px) {
+.logo{margin-top:1%;}
+.tel{margin-top:8%;}
+}
+
+@media screen and (max-width: 400px) {
+ .logo{margin-top:4%;}
+.tel{margin-top:10%;}
+
+}
+@media screen and (max-width:350px) {
+    
+
+.logo{margin-top:8%;}
+.tel{margin-top:14%;}
+
+}
+/*-------------------------------------------contain--------------@meida*/
+@media screen and (max-width: 485px) {
+	
+	.con1 ul li{
+		font-size: 4vw;
+	}
+	h1{
+		font-size: 5.5vw;
+	}
+	h2{
+		font-size: 4.5vw;
+	}
+	h4{
+		font-size: 4vw;
+	}
+	.con2 input,.cars,.area{
+		font-size: 3vw;
+	}
+}

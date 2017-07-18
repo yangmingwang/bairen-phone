@@ -1,0 +1,177 @@
+body {
+	width:600px;	
+	margin:0 auto;
+	font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+    body {
+		width:100%;  
+  	}
+}
+h1{
+	font-size: 22px;
+	font-weight: lighter;
+}
+h2{
+	font-size: 12px;
+}
+h4{
+	font-weight: lighter;
+}
+p{
+	font-size: 18px;
+	font-family: sans-serif;
+}
+/*-------------------------------------------------------------contain*/
+.box{
+	width: 100%;
+	position: relative;
+}
+.top{
+	width:100%;
+	overflow: hidden; 
+	background-color: #ffffff;
+	margin:0 auto;
+}
+.logo{
+	width:45%;
+	float:left;
+}
+.tel{
+	margin-top:5%;	
+	width:45%;
+    float:right;
+}
+.tel img{
+	float:right;
+}
+.contain{
+	width: 100%;
+	margin-top: 6%;
+}
+.con1{
+	width: 100%;
+}
+.con2{
+	width: 90%;
+	margin: 0 5%;
+}
+.con2 div{
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 5%;
+	display: none;
+}
+.con2 .show{
+	display: block;
+}
+.con2_div{
+	width: 90%;
+	margin: 15px 5%;
+	padding-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.con2_div_left{
+	background: url(../img/tc-151.png) no-repeat;
+	background-size:100% 100%;
+	padding-top: 2px;
+	padding-bottom: 12px;
+	width:50%;
+	float: left;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+}
+.con2_div_right{
+	background: url(../img/tc-14.png) no-repeat;
+	background-size:100% 100%;
+	width: 50%;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	float: left;
+	margin-left: -2px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.con2 .con2_div_right1{
+	background: url(../img/tc-142.png) no-repeat;
+	background-size:100% 100%;
+	width: 50%;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	float: left;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.con2 .con2_div_left1{
+	background: url(../img/tc-152.png) no-repeat;
+	background-size:100% 100%;
+	padding-top: 2px;
+	padding-bottom: 12px;
+	width:50%;
+	float: left;
+	margin-left: -2px;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+}
+.tab1_ul_div{
+	background: url(../img/img1.png) no-repeat;
+	background-size: 30%;
+	margin-bottom: 30px;
+	padding-left: 35%;
+}
+.tab1_ul_div h2{
+	margin-top: 5px;
+	text-align: right;
+	font-weight: lighter;
+}
+.tab1_li,.tab2_li{
+	width: 100%;
+	text-align: center;
+	word-spacing: 20px;
+	font-size: 16px;
+}
+.tab2_ul_div{
+	background: url(../img/pc3.png) no-repeat;
+	background-size: 30%;
+	margin-bottom: 30px;
+	padding-left: 35%;
+}
+.tab2_ul_div h2{
+	margin-top: 5px;
+	text-align: right;
+}
+/*-----------------------------------top----------@media*/
+@media screen and (max-width: 500px) {
+.logo{margin-top:1%;}
+.tel{margin-top:8%;}
+}
+
+@media screen and (max-width: 400px) {
+ .logo{margin-top:4%;}
+.tel{margin-top:10%;}
+
+}
+@media screen and (max-width:350px) {
+    
+
+.logo{margin-top:8%;}
+.tel{margin-top:14%;}
+
+}
+/*-----------------------------------------------------@media*/
+@media screen and (max-width: 570px) {
+    h1 {
+		font-size: 3.8vw;  
+  	}
+  	.tab1_ul_div p,.tab2_ul_div p,.tab1_li,.tab2_li{
+		font-size: 3vw;  
+  	}
+}
+@media screen and (max-width: 425px){
+	.con2_div_right,.con2_div_right1,.con2_div_left,.con2_div_left1{
+		font-size: 2vw;
+	}
+}
